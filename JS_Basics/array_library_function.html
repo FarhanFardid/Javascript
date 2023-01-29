@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Library Function</title>
+
+</head>
+<body style ="text-align:center;">
+    <script>
+        var cars =['Volvo', 'Audi','Mercedes','BMW','Ford'];
+        document.write("Initial Array is :"+ cars +"</br></br>");
+        
+        cars.push('Ferrari');
+        document.write("After pushing the array is :" +cars+"</br></br>");
+        
+        cars.pop();
+        document.write("After poping the array is :" +cars+"</br></br>");
+
+        cars.shift();
+        document.write("After Shifting the array is :" +cars+"</br></br>");
+
+        cars.unshift("Jaguar");
+        document.write("After UnShifting the array is :" +cars+"</br></br>");
+
+        cars.splice(2,0,'Volvo');
+        document.write("After Splicing the array is :" +cars+"</br></br>");
+
+        var scars = cars.slice(2);
+        document.write("After Slicing the array is :" +scars+"</br></br>");
+
+        var car= cars.concat(scars);
+        document.write("After Conacting the array is :" +car+"</br></br>");
+
+        var sortedcar = car.sort();
+        document.write("After Sorting the array is :" +car+"</br></br>");
+
+        var revcar = car.reverse();
+        document.write("After Reverse sorting the array is :" +revcar+"</br></br>");
+
+        var num=[20,30,40,60,12,49];
+var sortnum = num.sort(function(a,b){
+    return a-b;
+})
+document.write("After  sorting the number array is :" +sortnum+"</br></br>");
+
+var sortnum = num.sort(function(a,b){
+    return b-a;
+})
+document.write("After reverse sorting the number array is :" +sortnum+"</br></br>");
+
+    </script>
+    
+</body>
+
+</html>

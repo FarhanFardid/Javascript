@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Object</title>
+</head>
+<body>
+    <script>
+        const cars ={Brand:"BMW",Type:"SUV",Model:"X-300ie",Year:"2021"};
+        const person ={};
+        person.name = "John";
+        person.age = 50;
+
+        document.write("The " + cars.Brand +" " + cars.Model + " is a " + cars.Type + " car built in the year " +cars.Year+ " and this car is owned by "+ person.name +
+        " who is " + person.age + " years old.</br> ");
+
+        function Customer(name,age,brand,model,type,year){
+            this.name = name;
+            this.age = age;
+            this.brand= brand;
+            this.model =model;
+            this.type =type;
+            this.year=year;
+        }
+        var cus1 = new Customer("Shakib",37,"BMW","X-200ie","SUV",2021);
+        var cus2 = new Customer("Tamim",36,"BMW","X-400ie","Sedan",2022);
+        var cus3 = new Customer("Mushfiq",35,"Toyota","Ti-300","Cruiser",2021);
+        var cus4 = new Customer("Mahmudullah",38,"Toyota","V8-300i","Land-Cruiser",2022);
+        document.write("The " + cus1.brand +" " + cus1.model + " is a " + cus1.type + " car built in the year " +cus1.year+ " and this car is owned by "+ cus1.name +
+        " who is " + cus1.age + " years old.</br> ");
+
+        document.write("The " + cus2.brand +" " + cus2.model + " is a " + cus2.type + " car built in the year " +cus2.year+ " and this car is owned by "+ cus2.name +
+        " who is " + cus2.age + " years old. </br>");
+
+        document.write("The " + cus3.brand +" " + cus3.model + " is a " + cus3.type + " car built in the year " +cus3.year+ " and this car is owned by "+ cus3.name +
+        " who is " + cus3.age + " years old. </br>");
+
+        document.write("The " + cus4.brand +" " + cus4.model + " is a " + cus4.type + " car built in the year " +cus4.year+ " and this car is owned by "+ cus4.name +
+        " who is " + cus4.age + " years old. </br>");
+    </script>
+    
+</body>
+</html>

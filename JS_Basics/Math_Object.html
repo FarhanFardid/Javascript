@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+<body>
+    <script>
+        var s = 0;
+        var f =0;
+        for(var i=0; i<5; i++){
+
+        var n = parseInt(prompt("Guess A Number Between 0 - 5 : "));
+
+        var r = Math.floor(Math.random()*5) + 1;
+
+        if(n == r){
+            document.write("Success. You have guessed correct number.</br>");
+            s++;
+        }
+        else{
+            document.write("Fail. You have guessed wrong number. The random number was: " + r + "</br>");
+            f++;
+        }
+    }
+    document.write("You have Succeeded " + s + " times </br> You have failed " + f + " times .");
+    </script>
+    
+</body>
+</html>

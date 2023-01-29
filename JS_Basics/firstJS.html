@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First JS String</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        prompt{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+     
+      var firstName = prompt("Enter First Name: ");
+      var lastName = prompt("Enter Last Name: ");
+      var len1 = firstName.length;
+      var len2 = lastName.length;
+      var fullName = firstName + " " + lastName ;
+      document.write("The length of the first and last name is : first = " + len1 + " last = " + len2 + "</br>");
+      document.write("Fullname is : " + fullName.toUpperCase()+ "</br>");
+      document.write("Character at 2nd position of fullName is: " + fullName.charAt(2)+"</br>");
+      document.write("string slice : " + fullName.slice(0,5) + "</br>");
+    </script>
+</body>
+</html>

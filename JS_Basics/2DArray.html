@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Array</title>
+</head>
+<body>
+    <script>
+function Hscore(players){
+    var highscorer = players[0][0];
+    var highscore = players[0][1];
+    for (var i=0; i<players.length;i++){
+      
+            if(highscore < players[i][1]){
+                highscore = players[i][1];
+                highscorer = players[i][0];
+            }
+
+
+        }
+        return highscorer;
+    }
+    
+
+var players = [
+    ["Tamim Iqbal", 120],
+    ["Liton Das", 60],
+    ["Musfiq", 35],
+    ["shakib",75],
+    ["Mahmudullah",55]
+];
+var res = Hscore(players);
+document.write("The Highest scorer is : " + res);
+ 
+    </script>
+</body>
+</html>
